@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>UnDup</class>
+ <widget class="QMainWindow" name="UnDup">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>101</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>UnDup</string>
+  </property>
+  <widget class="QWidget" name="cw">
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <layout class="QHBoxLayout" name="hl">
+      <property name="sizeConstraint">
+       <enum>QLayout::SetDefaultConstraint</enum>
+      </property>
+      <item>
+       <widget class="QPushButton" name="btnDir">
+        <property name="text">
+         <string>Pick</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLineEdit" name="ledDir"/>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <widget class="QPushButton" name="btnGo">
+      <property name="text">
+       <string>UnDup</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
