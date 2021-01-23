@@ -91,6 +91,8 @@ DBG ("   `d to `d", j+1, i2+1);
                for (m = 0, k = 1;  k < ngot;  k++) {  // find longest fn
                   FnName (ufn, F [k].nm);   FnName (tfn, F [m].nm);
                   if (StrLn (ufn) > StrLn (tfn))  m = k;
+                  else if ((StrLn (ufn) == StrLn (tfn)) &&
+                           (StrLn (F [k].nm) > StrLn (F [m].nm)))  m = k;
                }
                f.Put (StrFmt (ps, " `s\n", F [m].nm));
                for (k = 0;  k < ngot;  k++)  if (k != m)
